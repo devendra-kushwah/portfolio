@@ -1,17 +1,22 @@
 import styled from "styled-components";
+import { tabletLView } from "../../style/breakpoints";
 
 /*
  *  Menu button and close menu button
  */
 
 export const Menu = styled.button`
-  color: red;
-  padding: 10px 20px;
-  background: #000;
+  background: transparent;
   border: 0;
   color: #fff;
-  width: 90px;
+  width: 80px;
   height: 60px;
+  @media ${tabletLView} {
+    background: #000;
+  }
+  &.close {
+    float: right;
+  }
 `;
 export const HeaderTag = styled.header`
   position: fixed;
@@ -26,18 +31,19 @@ export const HeaderTag = styled.header`
 export const NavBar = styled.nav`
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  left: -70%;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  &.close {
-    display: none;
+  width: 70%;
+  @media ${tabletLView} {
+    width: 30%;
   }
-  .close {
-    padding: 20px;
-    float: right;
+
+  &.open {
+    left: 0;
   }
+  /* Button  */
+
   ul {
     list-style: none;
     margin: 0;
@@ -48,7 +54,8 @@ export const NavBar = styled.nav`
   }
   a {
     color: #fff;
-    &:hover {
+    &:hover,
+    &.active {
       color: #f8cf4a;
     }
   }

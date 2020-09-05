@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { NavBar } from "./style";
 
 const Navigation = (props) => {
-  const { menuClass, closeMenu } = props;
+  const { menuClass } = props;
 
   return (
     <NavBar className={menuClass}>
