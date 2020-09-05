@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { mobileView, tabletView, tabletLView } from "../style/breakpoints";
+import { tabletLView } from "../style/breakpoints";
 
 export const Container = styled.div`
   max-width: ${(props) => (props.fluid ? "100%" : 1300)};
