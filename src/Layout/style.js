@@ -25,8 +25,8 @@ export const Row = styled.div`
 `;
 
 export const H1 = styled.h1`
-  font-size: 3rem;
-  margin: 20px 0 30px;
+  font-size: 30px;
+  margin: 20px 0;
   /* animation: ${textName} 2s linear 1s; */
 `;
 
@@ -44,16 +44,19 @@ export const ProfileImage = styled.div`
   }
 `;
 
+//-------------- Right column style
+
 export const ProfileInfo = styled.div`
   width: 70%;
   padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  h1 {
+  h3 {
+    margin-bottom: 20px;
   }
   strong {
-    font-size: 2rem;
+    font-size: 20px;
     position: relative;
     padding-left: 10px;
     letter-spacing: 1.4px;
