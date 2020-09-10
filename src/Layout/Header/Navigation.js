@@ -7,7 +7,7 @@ const Navigation = (props) => {
 
   return (
     <NavBar className={menuClass}>
-      {props.children}
+      {/* {props.children} */}
       <ul>
         <li>
           <NavLink className="transition" to="/" />

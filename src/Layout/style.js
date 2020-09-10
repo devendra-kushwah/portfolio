@@ -20,22 +20,23 @@ export const H1 = styled.h1`
   margin: 20px 0;
 `;
 
-export const ProfileImage = styled.div`
+export const LeftLayout = styled.div`
   padding: 30px;
-  background: #2fb3cd;
 
   /* Media  */
   @media ${tabletLView} {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
+    background: #2fb3cd;
   }
-  .image {
+  .info {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin: auto;
+    margin: 0 auto 20px;
+
     @media ${tabletLView} {
       width: 200px;
       height: 200px;
@@ -45,10 +46,10 @@ export const ProfileImage = styled.div`
 
 //-------------- Right column style
 
-export const ProfileInfo = styled.div`
+export const RightLayout = styled.div`
   padding: 30px;
   @media ${tabletLView} {
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,6 +72,20 @@ export const ProfileInfo = styled.div`
       z-index: -1;
       left: 0px;
       top: -10px;
+    }
+  }
+`;
+export const SocialNav = styled.div`
+  text-align: center;
+  margin-bottom: 20px;
+  a {
+    color: #2fb3cd;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px;
+
+    @media ${tabletLView} {
+      color: #fff;
     }
   }
 `;
