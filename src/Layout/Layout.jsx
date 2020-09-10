@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  H1,
-  RightLayout,
-  LeftLayout,
-  SocialNav,
-} from "./style";
+import { Container, Row, RightLayout, LeftLayout, SocialNav } from "./style";
 // import Header from "./Header";
 import { SocialYoutubeCircular } from "@styled-icons/typicons/SocialYoutubeCircular";
 import { TwitterWithCircle } from "@styled-icons/entypo-social/TwitterWithCircle";

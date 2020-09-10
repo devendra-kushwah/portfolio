@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { tabletLView } from "../style/breakpoints";
 
 export const Container = styled.div`
