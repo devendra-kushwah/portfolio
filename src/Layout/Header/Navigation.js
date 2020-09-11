@@ -9,11 +9,11 @@ const Navigation = (props) => {
     <NavBar className={menuClass}>
       {/* {props.children} */}
       <ul>
-        <li>
+        {/* <li>
           <NavLink className="transition" to="/" />
-        </li>
+        </li> */}
         <li>
-          <NavLink className="transition" to="/home">
+          <NavLink exact className="transition" to="/">
             Home
           </NavLink>
         </li>
