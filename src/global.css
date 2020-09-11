@@ -378,11 +378,13 @@ h3,
 h4,
 h5 {
   color: #000;
-  /* font-family: "monoton"; */
+  font-family: "monoton";
   font-weight: normal;
   margin: 0;
   color: #686060;
+  word-spacing: 7px;
 }
+
 
 /* Button */
 
@@ -437,4 +439,9 @@ p {
   left: 0;
   width: 30%;
   bottom: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
 }

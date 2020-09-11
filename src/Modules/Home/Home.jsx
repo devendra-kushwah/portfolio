@@ -16,13 +16,15 @@ const Profile = () => {
   return (
     <>
       <Layout>
-        <strong>Hello, There</strong>
-        <H1>I'm Devendra Kushwaha</H1>
-        <h3>I am a Full-stack developer</h3>
-        <div className="download-cv">
-          <a href="/#" className="button">
-            Download cv
-          </a>
+        <div>
+          <strong>Hello, There</strong>
+          <H1>I'm Devendra Kushwaha</H1>
+          <h2>I am a Full-stack developer</h2>
+          <div className="download-cv">
+            <a href="/#" className="button">
+              Download cv
+            </a>
+          </div>
         </div>
       </Layout>
     </>
