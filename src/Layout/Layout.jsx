@@ -3,6 +3,7 @@ import { Container, Row, RightLayout, LeftLayout, SocialNav } from "./style";
 // import Header from "./Header";
 import { SocialYoutubeCircular } from "@styled-icons/typicons/SocialYoutubeCircular";
 import { TwitterWithCircle } from "@styled-icons/entypo-social/TwitterWithCircle";
+import { SocialGithub } from "@styled-icons/foundation/SocialGithub";
 import Navigation from "./Header/Navigation";
 
 const Layout = (props) => {
@@ -33,6 +34,9 @@ const Layout = (props) => {
                   rel="noopener noreferrer"
                 >
                   <TwitterWithCircle size="40" />
+                </a>
+                <a href="https://github.com/" rel="noopener noreferrer">
+                  <SocialGithub size="48" />
                 </a>
               </SocialNav>
               <Navigation />

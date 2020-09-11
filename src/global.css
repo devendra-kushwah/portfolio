@@ -378,10 +378,10 @@ h3,
 h4,
 h5 {
   color: #000;
-  font-family: "monoton";
+  /* font-family: "monoton"; */
   font-weight: normal;
-  word-spacing: 1rem;
   margin: 0;
+  color: #686060;
 }
 
 /* Button */
@@ -406,10 +406,35 @@ h5 {
 .button:hover {
   background: #000;
 }
+
 a {
   text-decoration: none;
 }
 
 .transition {
   transition: all 0.3s ease-in-out;
+}
+
+p {
+  font-size: 16px;
+
+}
+
+.page-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+.page-title:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #ccc;
+  left: 0;
+  width: 30%;
+  bottom: 0;
 }

@@ -4,8 +4,10 @@ import Layout from "../../Layout";
 const Blogs = () => {
   return (
     <Layout>
-      <h3>My Blogs</h3>
-      Blogs
+      <div>
+        <h1 className="page-title">My Blogs</h1>
+        <p>lorem ipsum</p>
+      </div>
     </Layout>
   );
 };

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletLView } from "../style/breakpoints";
+import { tabletLView, desktopView } from "../style/breakpoints";
 
 export const Container = styled.div`
   max-width: ${(props) => (props.fluid ? "100%" : 1300)};
@@ -31,13 +31,13 @@ export const LeftLayout = styled.div`
     background: #2fb3cd;
   }
   .info {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
 
-    @media ${tabletLView} {
+    @media ${desktopView} {
       width: 200px;
       height: 200px;
     }
@@ -48,14 +48,20 @@ export const LeftLayout = styled.div`
 
 export const RightLayout = styled.div`
   padding: 30px;
+  text-align: center;
   @media ${tabletLView} {
-    width: 75%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    text-align: left;
   }
   h3 {
     margin-bottom: 20px;
+    font-size: 18px;
+    @media ${tabletLView} {
+      font-size: 25px;
+    }
   }
   strong {
     font-size: 20px;
