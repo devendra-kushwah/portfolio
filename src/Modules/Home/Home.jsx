@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { H1 } from "./style";
 import Layout from "../../Layout";
 
