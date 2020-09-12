@@ -59,6 +59,7 @@ export const RightLayout = styled.div`
   background: ${(props) => props.bg || "#ccc"};
   color: ${(props) => props.color || ""};
   height: calc(100vh - 291px);
+  overflow-y: auto;
   &:before {
     content: "";
     position: absolute;

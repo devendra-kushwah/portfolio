@@ -28,6 +28,11 @@ const Navigation = (props) => {
           </NavLink>
         </li>
         <li>
+          <NavLink exact className="transition" to="/work">
+            Work
+          </NavLink>
+        </li>
+        <li>
           <NavLink exact className="transition" to="/skills">
             Skills
           </NavLink>

@@ -35,7 +35,11 @@ const Layout = (props) => {
                 >
                   <TwitterWithCircle size="40" />
                 </a>
-                <a href="https://github.com/" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialGithub size="48" />
                 </a>
               </SocialNav>

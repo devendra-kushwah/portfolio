@@ -12,13 +12,13 @@ export const Ul = styled.ul`
     @media ${mobileView} {
       width: calc(100% / 4);
     }
-    @media ${desktopView} {
-      margin-bottom: 30px;
+    svg {
+      color: #fff;
+    }
+    /* @media ${desktopView} {
       svg {
-        width: 120px;
-        height: 120px;
         color: #fff;
       }
-    }
+    } */
   }
 `;
