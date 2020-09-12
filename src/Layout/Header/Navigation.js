@@ -18,17 +18,17 @@ const Navigation = (props) => {
           </NavLink>
         </li>
         <li>
-          <NavLink className="transition" to="/about">
+          <NavLink exact className="transition" to="/about">
             About
           </NavLink>
         </li>
         <li>
-          <NavLink className="transition" to="/blogs">
+          <NavLink exact className="transition" to="/blogs">
             Blogs
           </NavLink>
         </li>
         <li>
-          <NavLink className="transition" to="/skills">
+          <NavLink exact className="transition" to="/skills">
             Skills
           </NavLink>
         </li>
