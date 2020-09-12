@@ -17,6 +17,7 @@ export const Ul = styled.ul`
       svg {
         width: 120px;
         height: 120px;
+        color: #fff;
       }
     }
   }

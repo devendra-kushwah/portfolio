@@ -42,7 +42,7 @@ const Layout = (props) => {
               <Navigation />
             </div>
           </LeftLayout>
-          <RightLayout className="col profile-info">
+          <RightLayout className="col profile-info" bg="#64b5b7" color="#fff">
             {props.children}
           </RightLayout>
         </Row>
