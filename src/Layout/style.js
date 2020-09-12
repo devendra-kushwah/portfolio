@@ -22,13 +22,15 @@ export const H1 = styled.h1`
 
 export const LeftLayout = styled.div`
   padding: 30px;
-
+  position: relative;
+  z-index: 2;
   /* Media  */
   @media ${tabletLView} {
     width: 25%;
     display: flex;
     justify-content: center;
-    background: #2fb3cd;
+    background: #fff;
+    border-right: 1px solid #fff;
   }
   .info {
     width: 120px;
@@ -49,12 +51,30 @@ export const LeftLayout = styled.div`
 export const RightLayout = styled.div`
   padding: 30px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${(props) => props.bg || "#ccc"};
+  color: ${(props) => props.color || ""};
+  height: calc(100vh - 291px);
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    background: #276b79;
+    z-index: -1;
+    transform: skewX(124.5deg);
+    transform-origin: top;
+  }
   @media ${tabletLView} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 75%;
     text-align: left;
+    height: 100vh;
   }
   h3 {
     margin-bottom: 20px;
@@ -85,13 +105,14 @@ export const SocialNav = styled.div`
   text-align: center;
   margin-bottom: 20px;
   a {
-    color: #2fb3cd;
+    /* color: #2fb3cd; */
+    color: #276b79;
     display: inline-block;
     vertical-align: middle;
     margin: 0 3px;
 
     @media ${tabletLView} {
-      color: #fff;
+      /* color: #fff; */
     }
   }
 `;

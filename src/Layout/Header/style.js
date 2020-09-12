@@ -56,10 +56,11 @@ export const NavBar = styled.nav`
     margin: 0 10px;
   }
   a {
-    color: #2fb3cd;
+    /* color: #2fb3cd; */
+    color: #276b79;
     font-size: 15px;
     @media ${tabletLView} {
-      color: #fff;
+      /* color: #fff; */
     }
     &:hover,
     &.active {
