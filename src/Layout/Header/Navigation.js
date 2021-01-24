@@ -2,41 +2,29 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { NavBar } from "./style";
 
-const Navigation = (props) => {
-  const { menuClass } = props;
+const routeLinks = [
+  "",
+  "home",
+  "about",
+  "blogs",
+  "skills",
+  "work",
+  "weekend-work",
+];
 
+const Navigation = (props) => {
+  const { menuClass, children } = props;
   return (
-    <NavBar className={menuClass}>
-      {/* {props.children} */}
+    <NavBar className={`navigation ${menuClass}`}>
+      {children}
       <ul>
-        {/* <li>
-          <NavLink className="transition" to="/" />
-        </li> */}
-        <li>
-          <NavLink exact className="transition" to="/">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact className="transition" to="/about">
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact className="transition" to="/blogs">
-            Blogs
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact className="transition" to="/work">
-            Work
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact className="transition" to="/skills">
-            Skills
-          </NavLink>
-        </li>
+        {routeLinks.map((link) => (
+          <li key={link}>
+            <NavLink exact className="transition nav-link" to={`/${link}`}>
+              {link}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </NavBar>
   );

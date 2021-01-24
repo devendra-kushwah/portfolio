@@ -21,35 +21,24 @@ export const H1 = styled.h1`
 `;
 
 export const LeftLayout = styled.div`
-  padding: 30px;
+  padding: 20px;
   position: relative;
   z-index: 2;
   /* Media  */
   @media ${tabletLView} {
     width: 25%;
+    padding: 30px;
     display: flex;
     justify-content: center;
     background: #fff;
     border-right: 1px solid #fff;
-  }
-  .info {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px;
-
-    @media ${desktopView} {
-      width: 200px;
-      height: 200px;
-    }
   }
 `;
 
 //-------------- Right column style
 
 export const RightLayout = styled.div`
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -58,7 +47,7 @@ export const RightLayout = styled.div`
   align-items: center;
   background: ${(props) => props.bg || "#ccc"};
   color: ${(props) => props.color || ""};
-  height: calc(100vh - 291px);
+  height: calc(100vh - 228px);
   overflow-y: auto;
   &:before {
     content: "";
@@ -76,6 +65,7 @@ export const RightLayout = styled.div`
     width: 75%;
     text-align: left;
     height: 100vh;
+    padding: 30px;
   }
   h3 {
     margin-bottom: 20px;
@@ -99,21 +89,6 @@ export const RightLayout = styled.div`
       z-index: -1;
       left: 0px;
       top: -10px;
-    }
-  }
-`;
-export const SocialNav = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
-  a {
-    /* color: #2fb3cd; */
-    color: #276b79;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 3px;
-
-    @media ${tabletLView} {
-      /* color: #fff; */
     }
   }
 `;
